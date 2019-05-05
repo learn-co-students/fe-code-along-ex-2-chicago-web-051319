@@ -7,9 +7,19 @@
     </head>
 
     <body>
-        <h1>Exceptional</h1>
-        <h2>Realty Group</h2>
+        <header>
+         <h1>Exceptional</h1>
+            <h2>Realty Group</h2>
 
+            <nav class ="navPanel">
+            <h3> Navigation Panel </h3>
+             <a href="index.html" alt="Index Page">Index</a>
+             <a href="listings.html" alt="Listings Page">Listings</a>
+             <a href="market-report.html" alt="Market Report Page">Market-Report</a>
+             <a href="contact.html" alt="Contact Info Page">Contact Info</a>
+             <a href="http://hud.gov" target="_blank"> H.U.D </a>
+            </nav>
+        </header>
         
         <h3>Contact</h3>
         <!-- Adding a map -->
@@ -32,21 +42,31 @@
             <input type="submit" value="Send">
         </form>
 
-        <h3> Adding a video for educational purposes </h3> <!--please do not sue me, I make mo money from this -->
-        <video controls>
-            <source src="videos/tutvid.mp4" type="video/mp4">
-            <source src="videos/tutvid.ogv" type="video/mp4">
-            Your browser doesn't support HTML5 video, <a href="http://browserhappy.com/" tar="_blank">please upgrade your browser</a>
-        </video>
 
-        <div class ="navPanel">
-            <h3> Navigation Panel </h3>
-            <a href="index.html" alt="Index Page">Index</a>
-            <a href="listings.html" alt="Listings Page">Listings</a>
-            <a href="market-report.html" alt="Market Report Page">Market-Report</a>
-            <a href="contact.html" alt="Contact Info Page">Contact Info</a>
-            <a href="http://hud.gov" target="_blank"> H.U.D </a>
-        </div>
+
+        <section id="featured">
+            <figure>
+                <img src="images/welcome-pic.jpg">
+                <figcaption>10982 McGuffin Street, Apt 12 , Nickel Rd</figcaption> <!-- a caption of the figure -->
+            </figure>
+        </section>
+
+        <section id "promotional">
+            <figure>
+                <h3> Adding a video for educational purposes </h3> <!--please do not sue me, I make mo money from this -->
+                 <video controls>
+                    <source src="videos/tutvid.mp4" type="video/mp4">
+                    <source src="videos/tutvid.ogv" type="video/mp4">
+                    Your browser doesn't support HTML5 video, <a href="http://browserhappy.com/" tar="_blank">please upgrade your browser</a>
+                </video>
+                <figcaption>Exceptional Realty Group Promotional Video (youtube rip)</figcaption>
+            </figure>
+        </section>
+
+        <footer>
+            &copy 2019 Exceptional Realty All Rights Reserved
+            ** Not really, just a tester website
+        </footer>
     </body>
 
 </html>

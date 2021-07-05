@@ -1,18 +1,72 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Exceptional Realty Group - Luxury Homes - Contact</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html>
+    <!-- More learning stuff, for those who do not like needless comments, I do apologize ahead of time -->
+    <head> 
+    <meta charset="UTF-8">
+    <title>Exceptional Realty</title>
+    </head>
 
-  <h1>Exceptional</h1>
-  <h2>Realty Group</h2>
+    <body>
+        <header>
+         <h1>Exceptional</h1>
+            <h2>Realty Group</h2>
 
-  <!-- links -->
-  <a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings.html">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
+            <nav class ="navPanel">
+            <h3> Navigation Panel </h3>
+             <a href="index.html" alt="Index Page">Index</a>
+             <a href="listings.html" alt="Listings Page">Listings</a>
+             <a href="market-report.html" alt="Market Report Page">Market-Report</a>
+             <a href="contact.html" alt="Contact Info Page">Contact Info</a>
+             <a href="http://hud.gov" target="_blank"> H.U.D </a>
+            </nav>
+        </header>
+        
+        <h3>Contact</h3>
+        <!-- Adding a map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.041147123315!2d-87.65311300375502!3d41.92555068551401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd31b53883967%3A0x95dd53ec4c735cab!2sFullerton!5e0!3m2!1sen!2sus!4v1557073396364!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-  <h3>Contact</h3>
-  
-</body>
+        <!-- Adding a contact form -->
+        <form action="#" method="post">    <!-- -->
+            <label for="fullname">Name</label>   <!-- A label for the input "fullname"-->
+            <input type="text" id = "fullname" name="fullname" placeholder="Your Name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your Email" required> <!-- HTML5 gives email validadition -->
+
+            <label for="phone">Tel</label>
+            <input type="tel" name="phone" id="phone" placeholder="Phone #(optional)"> <!-- Tel will make lives easier for mobile users -->
+
+            <label for="message">Messsage</label>
+            <textarea id="message" name="message" rows="10" placeholder="Message..."></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+
+
+
+        <section id="featured">
+            <figure>
+                <img src="images/welcome-pic.jpg">
+                <figcaption>10982 McGuffin Street, Apt 12 , Nickel Rd</figcaption> <!-- a caption of the figure -->
+            </figure>
+        </section>
+
+        <section id "promotional">
+            <figure>
+                <h3> Adding a video for educational purposes </h3> <!--please do not sue me, I make mo money from this -->
+                 <video controls>
+                    <source src="videos/tutvid.mp4" type="video/mp4">
+                    <source src="videos/tutvid.ogv" type="video/mp4">
+                    Your browser doesn't support HTML5 video, <a href="http://browserhappy.com/" tar="_blank">please upgrade your browser</a>
+                </video>
+                <figcaption>Exceptional Realty Group Promotional Video (youtube rip)</figcaption>
+            </figure>
+        </section>
+
+        <footer>
+            &copy 2019 Exceptional Realty All Rights Reserved
+            ** Not really, just a tester website
+        </footer>
+    </body>
+
 </html>
